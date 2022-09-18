@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "./GloboLogo.png";
 
+// Header file
 
 type Args = {
   subtitle: string;
