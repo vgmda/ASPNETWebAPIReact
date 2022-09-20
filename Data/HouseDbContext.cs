@@ -9,6 +9,13 @@ public class HouseDbContext : DbContext
         var path = Environment.GetFolderPath(folder);
         optionsBuilder.UseSqlite($"Data Source={Path.Join(path, "housesprod.db")}");
 
+
+
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        SeedData.Seed(modelBuilder);
     }
 
 }
