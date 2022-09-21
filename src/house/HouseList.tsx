@@ -7,7 +7,7 @@ const HouseList = () => {
     const [houses, setHouses] = useState<House[]>([]);
 
     const fetchHouses = async () => {
-        const rsp = await fetch($(config.baseApiUrl}/houses);
+        const rsp = await fetch(`${config.baseApiUrl}/houses`);
         const houses = await rsp.json();
         setHouses(houses);
     };
