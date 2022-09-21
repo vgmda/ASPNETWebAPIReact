@@ -1,21 +1,18 @@
-using Microsoft.EntityFrameworkCore;
-
 public class HouseDbContext : DbContext
 {
-    public DbSet<HouseEntity> House => Set<HouseEntity>();
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public HouseDbContext(DbContextOptions<HouseDbContext> options) : base(options) { }
+    public DbSet<HouseEntity> Houses => Set<HouseEntity>();
+
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);
-        optionsBuilder.UseSqlite($"Data Source={Path.Join(path, "housesprod.db")}");
-
-
-
+        options.UseSqlite($"Data Source={Path.Join(path, "housesprod.db")}");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         SeedData.Seed(modelBuilder);
     }
-
 }
