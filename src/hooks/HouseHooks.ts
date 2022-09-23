@@ -13,6 +13,13 @@ const useFetchHouses = () => {
     );
 }
 
+const useFetchHouse = (id: number) => {
+    return useQuery<House, AxiosError>(["houses", id], () =>
+        axios.get(`${config.baseApiUrl}/house/${id}`).then(
+            (resp) => resp.data)
+    );
+}
+
 // const useFetchHouses = (): House[] => {
 //     const [houses, setHouses] = useState<House[]>([]);
 
@@ -30,4 +37,6 @@ const useFetchHouses = () => {
 //     return houses;
 // }
 
+
 export default useFetchHouses;
+export { useFetchHouse };
