@@ -3,6 +3,7 @@ import useFetchHouses, { useFetchHouse } from '../hooks/HouseHooks';
 import { currencyFormatter } from '../config';
 import ApiStatus from '../ApiStatus';
 import { useParams } from 'react-router-dom';
+import defaultPhoto from './defaultPhoto';
 
 const HouseDetail = () => {
     const { id } = useParams();
@@ -17,7 +18,7 @@ const HouseDetail = () => {
         <div className='row'>
             <div className='col-6'>
                 <div className='row'>
-                    <img className='img-fluid' src={data.photo} alt='House picture' />
+                    <img className='img-fluid' src={data.photo ? data.photo : defaultPhoto} alt='House picture' />
                 </div>
             </div>
             <div className='col-6'>
