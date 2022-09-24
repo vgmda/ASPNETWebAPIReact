@@ -35,6 +35,20 @@ const useAddHouse = () => {
     );
 }
 
+const useUpdateHouse = () => {
+    const nav = useNavigate();
+    const queryClient = useQueryClient();
+    return useMutation<AxiosResponse, AxiosError, House>(
+        (h) => axios.put(`${config.baseApiUrl}/houses`, h),
+        {
+            onSuccess: (_, house) => {
+                queryClient.invalidateQueries("houses");
+                nav(`/house/${house.id}`);
+            }
+        }
+    );
+}
+
 // const useFetchHouses = (): House[] => {
 //     const [houses, setHouses] = useState<House[]>([]);
 
