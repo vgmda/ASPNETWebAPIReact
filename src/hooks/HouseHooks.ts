@@ -1,7 +1,8 @@
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { useQuery } from 'react-query';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
+import { useNavigate } from 'react-router-dom';
 import config from '../config';
 import { House } from '../types/houses';
 
@@ -17,6 +18,20 @@ const useFetchHouse = (id: number) => {
     return useQuery<House, AxiosError>(["houses", id], () =>
         axios.get(`${config.baseApiUrl}/house/${id}`).then(
             (resp) => resp.data)
+    );
+}
+
+const useAddHouse = () => {
+    const nav = useNavigate();
+    const queryClient = useQueryClient();
+    return useMutation<AxiosResponse, AxiosError, House>(
+        (h) => axios.post(`${config.baseApiUrl}/houses`, h),
+        {
+            onSuccess: () => {
+                queryClient.invalidateQueries("houses");
+                nav("/");
+            }
+        }
     );
 }
 
