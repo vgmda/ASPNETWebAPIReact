@@ -41,7 +41,7 @@ app.MapGet("/house/{houseId:int}", async (int houseId, IHouseRepository repo) =>
 // Create end-point
 app.MapPost("/houses", async ([FromBody] HouseDetailDto dto, IHouseRepository repo) =>
 {
-    var newHouse = repo.Add(dto);
+    var newHouse = await repo.Add(dto);
 
     return Results.Created($"/house/{newHouse.Id}", newHouse);
 
