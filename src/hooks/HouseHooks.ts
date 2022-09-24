@@ -49,6 +49,20 @@ const useUpdateHouse = () => {
     );
 }
 
+
+const useDeleteHouse = () => {
+    const nav = useNavigate();
+    const queryClient = useQueryClient();
+    return useMutation<AxiosResponse, AxiosError, House>(
+        (h) => axios.delete(`${config.baseApiUrl}/houses/${h.id}`),
+        {
+            onSuccess: () => {
+                queryClient.invalidateQueries("houses");
+                nav("/");
+            }
+        }
+    );
+}
 // const useFetchHouses = (): House[] => {
 //     const [houses, setHouses] = useState<House[]>([]);
 
@@ -68,4 +82,4 @@ const useUpdateHouse = () => {
 
 
 export default useFetchHouses;
-export { useFetchHouse };
+export { useFetchHouse, useAddHouse, useUpdateHouse, useDeleteHouse };
