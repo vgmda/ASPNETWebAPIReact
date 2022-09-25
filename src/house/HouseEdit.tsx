@@ -14,7 +14,7 @@ const HouseEdit = () => {
     const updateHouseMutation = useUpdateHouse();
 
     if (!isSuccess) return <ApiStatus status={status} />
-    
+
     return (
         <HouseForm
             house={data}
