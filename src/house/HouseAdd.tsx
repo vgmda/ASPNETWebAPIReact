@@ -1,9 +1,5 @@
 import React from 'react';
 import useFetchHouses, { useAddHouse, useFetchHouse } from '../hooks/HouseHooks';
-import { currencyFormatter } from '../config';
-import ApiStatus from '../ApiStatus';
-import { useParams } from 'react-router-dom';
-import defaultPhoto from './defaultPhoto';
 import { House } from '../types/houses';
 import HouseForm from './HouseForm';
 
