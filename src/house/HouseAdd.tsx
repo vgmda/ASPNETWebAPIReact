@@ -1,7 +1,7 @@
-import React from 'react';
-import useFetchHouses, { useAddHouse, useFetchHouse } from '../hooks/HouseHooks';
-import { House } from '../types/houses';
-import HouseForm from './HouseForm';
+import { useAddHouse } from "../hooks/HouseHooks";
+import { House } from "../types/houses";
+import ValidationSummary from "../ValidationSummary";
+import HouseForm from "./HouseForm";
 
 const HouseAdd = () => {
     const addHouseMutation = useAddHouse();
@@ -12,15 +12,20 @@ const HouseAdd = () => {
         description: "",
         price: 0,
         id: 0,
-        photo: ""
+        photo: "",
     };
 
     return (
-        <HouseForm
-            house={house}
-            submitted={(h) => addHouseMutation.mutate(h)}
-        />
+        <>
+            {addHouseMutation.isError && (
+                <ValidationSummary error={addHouseMutation.error} />
+            )}
+            <HouseForm
+                house={house}
+                submitted={(house) => addHouseMutation.mutate(house)}
+            />
+        </>
     );
-}
+};
 
 export default HouseAdd;
