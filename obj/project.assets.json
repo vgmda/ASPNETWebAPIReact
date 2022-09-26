@@ -278,7 +278,7 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
-      "MiniValidation/0.5.0-pre.20220315.50": {
+      "MiniValidation/0.6.0-pre.20220527.55": {
         "type": "package",
         "compile": {
           "lib/net6.0/MiniValidation.dll": {}
@@ -1171,20 +1171,21 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "MiniValidation/0.5.0-pre.20220315.50": {
-      "sha512": "G5HiDfjIleWWS2azcXWTAxxKe22YvM5dlOxiXQ2W+ZIaRxMicqpJ88HMTF6ytbP3DEBo3/FGawgM8NgmX0b91A==",
+    "MiniValidation/0.6.0-pre.20220527.55": {
+      "sha512": "7UVWH0kcE5oi1vCHD4nTEne+pJcPlR304d+woshKsxBnkWzwZe8yvVZyz8BrSW91Usnem8Bt1uYl3BTrpbSK2w==",
       "type": "package",
-      "path": "minivalidation/0.5.0-pre.20220315.50",
+      "path": "minivalidation/0.6.0-pre.20220527.55",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "lib/net6.0/MiniValidation.dll",
         "lib/net6.0/MiniValidation.xml",
         "lib/netcoreapp3.1/MiniValidation.dll",
         "lib/netcoreapp3.1/MiniValidation.xml",
         "lib/netstandard2.0/MiniValidation.dll",
         "lib/netstandard2.0/MiniValidation.xml",
-        "minivalidation.0.5.0-pre.20220315.50.nupkg.sha512",
+        "minivalidation.0.6.0-pre.20220527.55.nupkg.sha512",
         "minivalidation.nuspec"
       ]
     },
@@ -1556,7 +1557,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 6.*",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.*",
-      "MiniValidation >= 0.5.0-pre.20220315.50",
+      "MiniValidation >= 0.6.0-pre.20220527.55",
       "Swashbuckle.AspNetCore >= 6.*"
     ]
   },
@@ -1609,7 +1610,7 @@
           },
           "MiniValidation": {
             "target": "Package",
-            "version": "[0.5.0-pre.20220315.50, )"
+            "version": "[0.6.0-pre.20220527.55, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
