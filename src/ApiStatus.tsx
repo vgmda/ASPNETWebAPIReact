@@ -1,22 +1,18 @@
-import React from 'react';
-
 type Args = {
-    status: "idle" | "success" | "error" | "loading"
+    status: "idle" | "success" | "error" | "loading";
 };
 
 const ApiStatus = ({ status }: Args) => {
-    switch (status) 
-    {
+    switch (status) {
         case "error":
-            return <div>Error communicating with the data backend.</div>;
+            return <div>Error communicating with the data backend</div>;
         case "idle":
-            return <div>Idle state.</div>;
+            return <div>Idle</div>;
         case "loading":
             return <div>Loading..</div>;
         default:
-            throw Error("Unknown API state.");
+            throw Error("Unknown API state");
     }
-    
 };
 
 export default ApiStatus;
