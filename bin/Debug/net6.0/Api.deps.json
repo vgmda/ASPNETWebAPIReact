@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "6.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.9",
-          "MiniValidation": "0.5.0-pre.20220315.50",
+          "MiniValidation": "0.6.0-pre.20220527.55",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -182,11 +182,11 @@
           }
         }
       },
-      "MiniValidation/0.5.0-pre.20220315.50": {
+      "MiniValidation/0.6.0-pre.20220527.55": {
         "runtime": {
           "lib/net6.0/MiniValidation.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.0"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.0"
           }
         }
       },
@@ -521,12 +521,12 @@
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
-    "MiniValidation/0.5.0-pre.20220315.50": {
+    "MiniValidation/0.6.0-pre.20220527.55": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-G5HiDfjIleWWS2azcXWTAxxKe22YvM5dlOxiXQ2W+ZIaRxMicqpJ88HMTF6ytbP3DEBo3/FGawgM8NgmX0b91A==",
-      "path": "minivalidation/0.5.0-pre.20220315.50",
-      "hashPath": "minivalidation.0.5.0-pre.20220315.50.nupkg.sha512"
+      "sha512": "sha512-7UVWH0kcE5oi1vCHD4nTEne+pJcPlR304d+woshKsxBnkWzwZe8yvVZyz8BrSW91Usnem8Bt1uYl3BTrpbSK2w==",
+      "path": "minivalidation/0.6.0-pre.20220527.55",
+      "hashPath": "minivalidation.0.6.0-pre.20220527.55.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
       "type": "package",
