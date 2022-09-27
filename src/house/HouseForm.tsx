@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toBase64 from '../toBase64';
 import { House } from '../types/houses';
 
 type Args = {
@@ -17,12 +18,10 @@ const HouseForm = ({ house, submitted }: Args) => {
 
     const onFileSelected = async (e: React.ChangeEvent<HTMLInputElement>): Promise<void> => {
         e.preventDefault();
-        e.target.files &&
-            e.target.files[0] &&
-            setHouseState({
-                ...houseState,
-                photo: await toBase64(e.target.files[0]),
-            });
+        e.target.files && e.target.files[0] && setHouseState({
+            ...houseState,
+            photo: await toBase64(e.target.files[0]),
+        });
     };
 
     return (
