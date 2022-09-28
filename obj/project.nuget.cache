@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/DAKhOtBrazA3eKu1xPKYiBsTOy/0kuI3f1Xspzqh8la1VHoX3mNfMc1ol0Pt+TyeNPuTGAnDabFEvi0vNW16A==",
+  "dgSpecHash": "PI/a44BjhtOQaVv0LOFmIeuzWVueAPBuetyfpFz1JOucvNeCC4albLL6fcmBpavkSnDybg4q+WW4hA6ca0dqTQ==",
   "success": true,
   "projectFilePath": "/Users/vasile/Projects/ASPNETWebAPIReact/Api/Api.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,7 @@
     "/Users/vasile/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/vasile/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/vasile/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/Users/vasile/.nuget/packages/minivalidation/0.6.0-pre.20220527.55/minivalidation.0.6.0-pre.20220527.55.nupkg.sha512",
+    "/Users/vasile/.nuget/packages/minivalidation/0.5.0-pre.20220315.50/minivalidation.0.5.0-pre.20220315.50.nupkg.sha512",
     "/Users/vasile/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/Users/vasile/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/Users/vasile/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
