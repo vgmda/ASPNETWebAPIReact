@@ -4,6 +4,7 @@ import { currencyFormatter } from "../config";
 import ApiStatus from "../ApiStatus";
 import { Link, useParams } from "react-router-dom";
 import defaultPhoto from "./defaultPhoto";
+import Bids from "../bids/Bids";
 
 const HouseDetail = () => {
     const { id } = useParams();
@@ -63,6 +64,7 @@ const HouseDetail = () => {
                 <div className="row">
                     <div className="col-12 mt-3">{data.description}</div>
                 </div>
+                <Bids house={data} />
             </div>
         </div>
     );
