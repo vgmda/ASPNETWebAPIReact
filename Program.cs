@@ -31,4 +31,6 @@ app.MapHouseEndpoints();
 app.MapBidEndpoints();
 
 
+
+
 app.Run();
