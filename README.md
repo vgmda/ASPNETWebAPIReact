@@ -13,3 +13,16 @@
 - House & Bid Entities - Classes which includes proprieties (getters & setters)
 - Bid & House Repositories - Define methods for each entity (Get, Add, Update & Delete)
 - Seed Data class which populates the DB with pre-defined data
+- Server-side validation (MiniValidator)
+
+
+## React
+
+- Consuming end-points from the API
+- Custom Hooks and useEffect
+- Caching and re-fetching with react-query
+- Formatting incoming data and displaying API status info
+- Use routing (BrowserRouter)
+- Use navigation (useNavigate())
+- Displaying validation errors
+- Uploading images
