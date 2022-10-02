@@ -16,3 +16,13 @@
 tr {
   cursor: pointer;
 }
+
+.btn-primary {
+  background-color: coral !important;
+  border-color: coral !important;
+}
+
+.btn-primary:hover{
+  background-color: #EA9575 !important;
+  border-color: #EA9575 !important;
+}

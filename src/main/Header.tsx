@@ -11,8 +11,8 @@ type Args = {
 
 const Header = ({ subtitle }: Args) => {
 
-  let navigate = useNavigate();
-  function handleClick() {
+  const navigate = useNavigate();
+  const handleClick = () => {
     navigate('/')
   }
 

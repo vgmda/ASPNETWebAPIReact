@@ -15,9 +15,10 @@ const HouseList = () => {
   return (
     <div>
       <div className="row mb-2">
-        <h5 className="themeFontColor text-center">
-          Houses currently on the market
-        </h5>
+        <h3 className="themeFontColor text-center">
+          Houses
+          <small className="text-muted"> currently on the market</small>
+        </h3>
       </div>
       <table className="table table-hover">
         <thead>
